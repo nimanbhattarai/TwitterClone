@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex container mx-auto overflow-hidden">
+        <div class="left w-[70vw] flex h-full">
+            <div class="logo w-8 invert my-2 pt-3 ml-[45px] fixed">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="r-4qtqp9 r-yyyyoor-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="sidebar unset fixed pt-10 pl-[44px] ">
+                <ul class="flex flex-col text-xl gap-4 cursor-pointer mt-12 relative">
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">Home</span>Home
+                    </li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">Explore</span>Explore
+                    </li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">Notifications</span>Notification
+                    </li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">Mail</span>Message
+                    </li>
+                    <li class=" flex justify-start items-center gap-5 hover:font-medium"><span
+                            class="material-symbols-outlined">automation</span>Grok</li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">Groups</span>Communities
+                    </li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">Workspace_premium</span>Premium
+                    </li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">Person</span>Profile
+                    </li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">More_horiz</span>More
+                    </li>
+                    <button
+                        class="bg-cyan-500 rounded-3xl text-xl w-[12vw] h-[4vh] flex gap-4 justify-center items-center text-white font-semibold"
+                        type="button">
+                        Post
+                    </button>
+                </ul>
+                <div class="profile pt-20 flex gap-5">
+                    <img class="rounded-full w-14 h-14" src="NB.png" alt="NB">
+                    <div class="text flex flex-col font-semibold space-y-1">
+                        <span>
+                            Niman Bhattarai
+                        </span>
+                        <span>
+                            @nimanbhattarai3
+                        </span>
+                    </div>
+                    <span class="material-symbols-outlined flex justify-center items-center gap-4">more_horiz</span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sle w-full border border-x-white border-y-black h-auto">
+            <nav class="flex justify-evenly font-bold m-4 h-6 items-center cursor-pointer">
+
+                <div class="hover:border-b-4 hover:border-blue-500 pb-1">For you</div>
+                <div class="hover:border-b-4 hover:border-blue-500 pb-1">Following</div>
+
+            </nav>
+            <hr>
+
+            <div class="flex">
+                <div class="flex items-center w-full mt-5 mb-5">
+                    <img class="rounded-full w-10 h-10 m-2" src="NB.png" alt="NB">
+                    <input
+                        class="bg-black text-white border-none focus:outline-none focus:border-none focus:ring-0 border-b-2 border-gray-500 hover:border-blue-500 focus:border-blue-500 placeholder-gray-400 placeholder-opacity-75 w-full"
+                        type="text" placeholder="What is happening??..!!">
+                </div>
+
+            </div>
+            <div class="flex pl-12 items-center gap-1 text-blue-400">
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="24px"
+                    fill="rgb(29 155 240)" class="cursor-pointer rounded-3xl">
+                    <path
+                        d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q20-22 36-47.5t26.5-53q10.5-27.5 16-56.5t5.5-59q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z" />
+                </svg>
+                <div class="cursor-pointer rounded-3xl">Everyone can reply</div>
+            </div>
+            <div class="icons flex pt-3 pl-12 gap-4 h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                    class="cursor-pointer" fill="rgb(29 155 240)">
+                    <path
+                        d="M360-384h384L618-552l-90 120-66-88-102 136Zm-48 144q-29.7 0-50.85-21.15Q240-282.3 240-312v-480q0-29.7 21.15-50.85Q282.3-864 312-864h480q29.7 0 50.85 21.15Q864-821.7 864-792v480q0 29.7-21.15 50.85Q821.7-240 792-240H312Zm0-72h480v-480H312v480ZM168-96q-29.7 0-50.85-21.15Q96-138.3 96-168v-552h72v552h552v72H168Zm144-696v480-480Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                    class="cursor-pointer" fill="rgb(29 155 240)">
+                    <path
+                        d="M311.84-384h47.83Q380-384 394-397.8t14-34.2v-48h-48v48h-48v-96h96q0-20.4-13.75-34.2-13.76-13.8-34.09-13.8h-47.83Q292-576 278-562.23q-14 13.76-14 34.11v95.77Q264-412 277.75-398q13.76 14 34.09 14ZM456-384h48v-192h-48v192Zm96 0h48v-72h72v-48h-72v-24h96v-48H552v192ZM216-144q-29 0-50.5-21.5T144-216v-528q0-29.7 21.5-50.85Q187-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29-21.15 50.5T744-144H216Zm0-72h528v-528H216v528Zm0-528v528-528Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                    class="cursor-pointer" fill="rgb(29 155 240)">
+                    <path
+                        d="m579-192-51-51 93-93-93-93 51-51 93 93 93-93 51 51-93 93 93 93-51 51-93-93-93 93Zm64-336L507-664l51-51 85 85 169-170 52 51-221 221ZM96-288v-72h336v72H96Zm0-312v-72h336v72H96Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                    class="cursor-pointer" fill="rgb(29 155 240)">
+                    <path
+                        d="M480-480Zm.28 384Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.81-834q69.81-30 149.19-30 37 0 73.5 6.5t70.5 20.69V-757q-34-17-70-26t-74-9q-129.67 0-220.84 91.23-91.16 91.23-91.16 221Q168-350 259.23-259t221 91Q610-168 701-259.16q91-91.17 91-220.84 0-38.26-9-74.13T757-624h80q14 35 20.5 71t6.5 73q0 79.38-30 149.19T751.5-208.5Q699-156 629.28-126q-69.73 30-149 30ZM768-696v-72h-72v-72h72v-72h72v72h72v72h-72v72h-72ZM612-516q25 0 42.5-17.5T672-576q0-25-17.5-42.5T612-636q-25 0-42.5 17.5T552-576q0 25 17.5 42.5T612-516Zm-264 0q25 0 42.5-17.5T408-576q0-25-17.5-42.5T348-636q-25 0-42.5 17.5T288-576q0 25 17.5 42.5T348-516Zm132 228q60 0 110.5-31t79.5-84H290q29 53 79.5 84T480-288Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                    class="cursor-pointer" fill="rgb(29 155 240)">
+                    <path
+                        d="M216-600h528v-96H216v96Zm0 0v-96 96Zm0 504q-29.7 0-50.85-21.15Q144-138.3 144-168v-528q0-29 21.5-50.5T216-768h72v-96h72v96h240v-96h72v96h72q29 0 50.5 21.5T816-696v210q-17-7-35.03-11-18.04-4-36.97-6v-25H216v360h250q5 20 13.5 37.5T499-96H216Zm503.77 48Q640-48 584-104.23q-56-56.22-56-136Q528-320 584.23-376q56.22-56 136-56Q800-432 856-375.77q56 56.22 56 136Q912-160 855.77-104q-56.22 56-136 56ZM775-151l34-34-65-65v-86h-48v106l79 79Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                    class="cursor-pointer" fill="rgb(29 155 240)">
+                    <path
+                        d="M480-96q-108 0-174-31.5T240-210q0-26 19.5-47.5T315-295l58 55q-15 5-32 12.5T312-209q8 14 62 27.5T480-168q56 0 109-13.5t59-30.5q-13-9-30.5-16.5T585-241l58-56q38 16 57.5 38.5T720-210q0 51-66 82.5T480-96Zm1-210q95-70 143-143.5T672-594q0-98-62-148t-130-50q-68 0-130 50t-62 148q0 65 48 137.5T481-306Zm-1 90q-133-98-198.5-193.5T216-594q0-66 24-116.5t62-84.5q38-34 85-51.5t93-17.5q46 0 93 17.5t85 51.5q38 34 62 84.5T744-594q0 89-65.5 184.5T480-216Zm0-312q30 0 51-21t21-51q0-30-21-51t-51-21q-30 0-51 21.5T408-600q0 29 21 50.5t51 21.5Zm0-72Z" />
+                </svg>
+            </div>
+            <hr>
+
+            <div class="posts">
+                <div class="post flex hover:bg-customGrey cursor-pointer">
+                    <div class="image">
+                        <img class="border rounded-full w-[40px] m-2" src="img/ronb.jpg" alt="ronb">
+                    </div>
+                    <div class="content mt-2">
+                        <span class="font-semibold cursor-pointer hover:underline">Routine of Nepal banda</span>
+                        <span class=" text-gray-500 font-normal cursor-pointer">@RONBupdates · 15h</span>
+                        <div class="text-[15px]">Chyasal Football Ground is flooded by overflow of Bagmati river.😮
+                        </div>
+
+                        <div class="postImg w-[23vw] mt-3 h-auto">
+                            <img class="rounded-2xl" src="img/flood.jpeg" alt="flood">
+                            <div class="icons flex items-center p-3 cursor-pointer justify-between">
+                                <img class="hover:bg-orange-900 rounded-full" src="img/chat.svg" alt="chat">
+                                <img class="hover:bg-blue-700 rounded-full" src="img/repost.svg" alt="repost">
+                                <img class="hover:bg-pink-800 rounded-full" src="img/like.svg" alt="like">
+                                <img class="hover:bg-green-800 rounded-full" src="img/bars.svg" alt="bars">
+                                <img class="hover:bg-rose-700 rounded-full" src="img/bookmark.svg" alt="bookmarks">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="post flex hover:bg-customGrey cursor-pointer">
+                    <div class="image">
+                        <img class="border rounded-full w-[40px] m-2" src="img/ronb.jpg" alt="ronb">
+                    </div>
+                    <div class="content mt-2 ml-2">
+                        <span class="font-semibold cursor-pointer hover:underline">Routine of Nepal banda</span>
+                        <span class=" text-gray-500 font-normal cursor-pointer">@RONBupdates · 5h</span>
+                        <div class="text-[15px]">Happy birthday to former King of Nepal, Gyanendra Bir Bikram Shah Dev.
+                            ❤️🇳🇵
+                        </div>
+
+                        <div class="postImg w-[23vw] mt-3 h-auto">
+                            <img class="rounded-2xl" src="img/king.jpeg" alt="flood">
+                            <div class="icons flex items-center p-3 cursor-pointer justify-between">
+                                <img class="hover:bg-orange-900 rounded-full" src="img/chat.svg" alt="chat">
+                                <img class="hover:bg-blue-700 rounded-full" src="img/repost.svg" alt="repost">
+                                <img class="hover:bg-pink-800 rounded-full" src="img/like.svg" alt="like">
+                                <img class="hover:bg-green-800 rounded-full" src="img/bars.svg" alt="bars">
+                                <img class="hover:bg-rose-700 rounded-full" src="img/bookmark.svg" alt="bookmarks">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="post flex hover:bg-customGrey cursor-pointer">
+                    <div class="image">
+                        <img class="border rounded-full w-[40px] m-2" src="img/lfc.jpg" alt="ronb">
+                    </div>
+                    <div class="content mt-2">
+                        <span class="font-semibold cursor-pointer hover:underline">Liverpool FC</span>
+                        <span class=" text-gray-500 font-normal cursor-pointer">@LFC · 10h</span>
+                        <div class="text-[15px]">Big VirG!!!
+                        </div>
+
+                        <div class="postImg w-[23vw] mt-3 h-auto">
+                            <img class="rounded-2xl" src="img/virg.jpeg" alt="king">
+                            <div class="icons flex items-center p-3 cursor-pointer justify-between">
+                                <img class="hover:bg-orange-900 rounded-full" src="img/chat.svg" alt="chat">
+                                <img class="hover:bg-blue-700 rounded-full" src="img/repost.svg" alt="repost">
+                                <img class="hover:bg-pink-800 rounded-full" src="img/like.svg" alt="like">
+                                <img class="hover:bg-green-800 rounded-full" src="img/bars.svg" alt="bars">
+                                <img class="hover:bg-rose-700 rounded-full" src="img/bookmark.svg" alt="bookmarks">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right w-full">
+
+            <div class="search mx-auto p-3">
+                <div class="relative w-[20vw]">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="rgb(29 155 240)" class="absolute left-3 top-1/2 transform -translate-y-1/2 ">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                    <input
+                        class="bg-gray-800 text-white border-none border-b-2 placeholder-opacity-75 rounded-2xl w-full pl-10 min-h-[5vh] focus:bg-black"
+                        type="search" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="subscribe ml-4 border rounded-2xl w-[20vw] min-h-32">
+                <div class="p-2 font-extrabold text-xl">Suscribe for Premium</div>
+                <div class="pl-2 font-normal">
+                    Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+                </div>
+
+                <button class="text-base m-2 bg-cyan-500 rounded-2xl w-[6.5vw] min-h-[4vh] font-bold" type="button">
+                    Suscribe
+                </button>
+            </div>
+
+            <div class="trending border rounded-2xl w-[20vw] min-h-[100vh] ml-4 mt-3">
+                <ul>
+                    <div class="mt-2 ml-4 font-bold text-xl">
+                        Trends for you
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending</div>
+                        <div class="font-bold">#Nepal</div>
+                        <div class="text-base text-gray-400">1.52M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending globally</div>
+                        <div class="font-bold">EuroCup</div>
+                        <div class="text-base text-gray-400">5.5M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Entertaintment.Trending</div>
+                        <div class="font-bold">#Copa America</div>
+                        <div class="text-base text-gray-400">300K</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Sports.Trending</div>
+                        <div class="font-bold">Premier League</div>
+                        <div class="text-base text-gray-400">2M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending</div>
+                        <div class="font-bold">#Nepal</div>
+                        <div class="text-base text-gray-400">1.52M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending</div>
+                        <div class="font-bold">#Nepal</div>
+                        <div class="text-base text-gray-400">1.52M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending.Sports</div>
+                        <div class="font-bold">#WhoWillBeEuroCupWinners2024</div>
+                        <div class="text-base text-gray-400">10M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending</div>
+                        <div class="font-bold">#Nepal</div>
+                        <div class="text-base text-gray-400">1.52M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending</div>
+                        <div class="font-bold">#Nepal</div>
+                        <div class="text-base text-gray-400">1.52M</div>
+                    </div>
+                    <div class="flex m-4 flex-col">
+                        <div class="text-base text-gray-400">Trending</div>
+                        <div class="font-bold">#Nepal</div>
+                        <div class="text-base text-gray-400">1.52M</div>
+                    </div>
+
+                </ul>
+
+            </div>
+            <div class="m-2 ml-4 border rounded-2xl w-[20vw] min-h-[19vh]">
+                <span class="m-3 font-extrabold text-xl">Who to follow</span>
+                <div class="flex justify-between">
+                    <div class="flex flex-row items-center gap-3">
+                        <img class="m-2 rounded-full w-[36px]" src="img/sky sports.jpg" alt="">
+                        <div>
+                            <div class="font-bold hover:underline cursor-pointer">Sky Sports Premier League</div>
+                            <div class="text-gray-400">@SkySportPL</div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button class="button flex flex-row items-center m-1" type="button">
+                            <span class="bg-white text-black rounded-2xl p-2 font-semibold">Follow</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- 2nd -->
+
+
+                <div class="flex justify-between">
+                    <div class="flex flex-row items-center gap-3">
+                        <img class="m-2 rounded-full w-[36px]" src="img/goal.jpg" alt="">
+                        <div>
+                            <div class="font-bold hover:underline cursor-pointer">Goal</div>
+                            <div class="text-gray-400">@Goal</div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button class="button flex flex-row items-center m-1" type="button">
+                            <span class="bg-white text-black rounded-2xl p-2 font-semibold">Follow</span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="footer grid sm:grid-cols-3 text-xs gap-1 cursor-pointer text-gray-400 m-7">
+                <a class="hover:underline" href="#">Terms of Conditions</a>
+                <a class="hover:underline" href="#">Privacy Policy</a>
+                <a class="hover:underline" href="#">Cookie Policy</a>
+                <a class="hover:underline" href="#">Accessibility</a>
+                <a class="hover:underline" href="#">Ads Info</a>
+                <a class="hover:underline" href="#">More...</a>
+                <a class="hover:underline" href="#">© 2024 X Corp.</a>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
