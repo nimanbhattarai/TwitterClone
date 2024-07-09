@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Twitter Clone</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
     <link rel="stylesheet"
@@ -25,41 +25,42 @@
                 </svg>
             </div>
 
-            <div class="sidebar unset fixed pt-10 pl-[44px] ">
+            <div class="sidebar fixed pt-10 pl-[44px] ">
                 <ul class="flex flex-col text-xl gap-4 cursor-pointer mt-12 relative">
                     <li
                         class=" flex justify-start items-center gap-5 hover:font-medium hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">Home</span>Home
+                        <span class="material-symbols-outlined">home</span><span class="hidden md:block">Home</span>
                     </li>
                     <li
                         class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">Explore</span>Explore
+                        <span class="material-symbols-outlined">explore</span><span class="hidden md:block">Explore</span>
                     </li>
                     <li
                         class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">Notifications</span>Notification
+                        <span class="material-symbols-outlined">notifications</span><span class="hidden md:block">Notifications</span>
                     </li>
                     <li
                         class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">Mail</span>Message
+                        <span class="material-symbols-outlined">mail</span><span class="hidden md:block">Mail</span>
                     </li>
-                    <li class=" flex justify-start items-center gap-5 hover:font-medium"><span
-                            class="material-symbols-outlined">automation</span>Grok</li>
-                    <li
-                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">Groups</span>Communities
+                    <li class=" flex justify-start items-center gap-5 hover:font-medium">
+                        <span class="material-symbols-outlined">linked_services</span><span class="hidden md:block">Grok</span>
                     </li>
                     <li
                         class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">Workspace_premium</span>Premium
+                        <span class="material-symbols-outlined">Groups</span><span class="hidden md:block">Group</span>
                     </li>
                     <li
                         class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">Person</span>Profile
+                        <span class="material-symbols-outlined">Workspace_premium</span><span class="hidden md:block">Premium</span>
                     </li>
                     <li
                         class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
-                        <span class="material-symbols-outlined">More_horiz</span>More
+                        <span class="material-symbols-outlined">Person</span><span class="hidden md:block">Profile</span>
+                    </li>
+                    <li
+                        class=" flex justify-start items-center gap-5 hover:font-medium  hover:bg-customGrey w-40 h-12 rounded-2xl">
+                        <span class="material-symbols-outlined">More_horiz</span><span class="hidden md:block">More</span>
                     </li>
                     <button
                         class="bg-cyan-500 rounded-3xl text-xl w-[12vw] h-[4vh] flex gap-4 justify-center items-center text-white font-semibold"
@@ -155,7 +156,7 @@
                         <img class="border rounded-full w-[40px] m-2" src="img/ronb.jpg" alt="ronb">
                     </div>
                     <div class="content m-2">
-                        <div class="font-semibold cursor-pointer hover:underline">Routine of Nepal banda</div>
+                        <span class="font-semibold cursor-pointer hover:underline">Routine of Nepal banda</span>
                         <span class=" text-gray-500 font-normal cursor-pointer">@RONBupdates · 15h</span>
                         <div class="text-[15px]">Chyasal Football Ground is flooded by overflow of Bagmati river.😮
                         </div>
@@ -182,11 +183,11 @@
                         <span class="font-semibold cursor-pointer hover:underline">Routine of Nepal banda</span>
                         <span class=" text-gray-500 font-normal cursor-pointer">@RONBupdates · 5h</span>
                         <div class="text-[15px]">Happy birthday to former King of Nepal, Gyanendra Bir Bikram Shah Dev.
-                            ❤️🇳🇵
+                            ❤️🇳🇵    
                         </div>
 
                         <div class="postImg w-[23vw] mt-3 h-auto">
-                            <img class="rounded-2xl" src="img/king.jpeg" alt="flood">
+                            <img class="rounded-2xl" src="img/kings.jpeg" alt="flood">
                             <div class="icons flex items-center p-3 cursor-pointer justify-between">
                                 <img class="hover:bg-orange-900 rounded-full" src="img/chat.svg" alt="chat">
                                 <img class="hover:bg-blue-700 rounded-full" src="img/repost.svg" alt="repost">
@@ -254,52 +255,52 @@
                     <div class="mt-2 ml-4 font-bold text-xl">
                         Trends for you
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Trending</div>
                         <div class="font-bold">#Nepal</div>
                         <div class="text-base text-gray-400">1.52M</div>
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Trending globally</div>
                         <div class="font-bold">EuroCup</div>
                         <div class="text-base text-gray-400">5.5M</div>
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Entertaintment.Trending</div>
                         <div class="font-bold">#Copa America</div>
                         <div class="text-base text-gray-400">300K</div>
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Sports.Trending</div>
                         <div class="font-bold">Premier League</div>
                         <div class="text-base text-gray-400">2M</div>
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Trending</div>
                         <div class="font-bold">#Nepal</div>
                         <div class="text-base text-gray-400">1.52M</div>
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Trending</div>
                         <div class="font-bold">#Nepal</div>
                         <div class="text-base text-gray-400">1.52M</div>
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Trending.Sports</div>
                         <div class="font-bold">#WhoWillBeEuroCupWinners2024</div>
                         <div class="text-base text-gray-400">10M</div>
                     </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
+                        <div class="text-base text-gray-400">Trending</div>
+                        <div class="font-bold">#NepalVisit</div>
+                        <div class="text-base text-gray-400">500K</div>
+                    </div>
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Trending</div>
                         <div class="font-bold">#Nepal</div>
                         <div class="text-base text-gray-400">1.52M</div>
                     </div>
-                    <div class="flex m-4 flex-col">
-                        <div class="text-base text-gray-400">Trending</div>
-                        <div class="font-bold">#Nepal</div>
-                        <div class="text-base text-gray-400">1.52M</div>
-                    </div>
-                    <div class="flex m-4 flex-col">
+                    <div class="flex m-4 flex-col cursor-pointer hover:bg-customGrey">
                         <div class="text-base text-gray-400">Trending</div>
                         <div class="font-bold">#Nepal</div>
                         <div class="text-base text-gray-400">1.52M</div>
@@ -338,8 +339,21 @@
                         </button>
                     </div>
                 </div>
-
-
+                <!-- 3rd -->
+                <div class="flex justify-between">
+                    <div class="flex flex-row items-center gap-3">
+                        <img class="m-2 rounded-full w-[36px]" src="img/fifa.jpg" alt="">
+                        <div>
+                            <div class="font-bold hover:underline cursor-pointer">FIFA World Cup</div>
+                            <div class="text-gray-400">@FifaWorldCup</div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button class="button flex flex-row items-center m-1" type="button">
+                            <span class="bg-white text-black rounded-2xl p-2 font-semibold">Follow</span>
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <div class="footer grid sm:grid-cols-3 text-xs gap-1 gap-x-0.5 cursor-pointer text-gray-400 m-7">
